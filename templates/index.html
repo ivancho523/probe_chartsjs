@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualización de Datos de Embalses</title>
+    <link rel="stylesheet" href="style_2.css" />
+  </head>
+
+  <body>
+    <h1>Datos Mediciones Embalses de Río Negro</h1>
+    <h2>Visualización de Estadísticas Globales</h2>
+
+    <section>
+      <figure>
+        <h2>s_d0</h2>
+        <canvas id="s_d0_id"></canvas>
+      </figure>
+    </section>
+
+    <section>
+      <figure>
+        <h2>s_d1</h2>
+        <canvas id="s_d1_id"></canvas>
+      </figure>
+    </section>
+
+    <div class="container">
+      <div class="title">
+        <h1>Chart.js Fun</h1>
+        <h3>Try to update the chart type and randomize the data!</h3>
+      </div>
+      <div class="controls">
+        <h5 class="label">Chart Type</h5>
+        <select name="chartType" id="chartType" onchange="updateChartType()">
+          <option value="line">Line</option>
+          <option value="bar">Bar</option>
+          <option value="radar">Radar</option>
+          <option value="polarArea">Polar Area</option>
+          <option value="doughnut">Doughnut</option>
+        </select>
+        <button onclick="randomizeData()">Randomize Data!</button>
+      </div>
+      <div class="chart-container" style="position: relative; width: 85vw">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+
+    <section>
+      <figure>
+        <h2>s_d1_radar</h2>
+        <canvas id="s_d1_id_radar"></canvas>
+      </figure>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

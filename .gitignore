@@ -1,0 +1,5 @@
+fastapi_server/__pycache__
+fastapi_server/bin
+fastapi_server/include
+fastapi_server/lib
+fastapi_server/pyvenv.cfg

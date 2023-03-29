@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> Mi CV en HTML </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <!-- Esta es una imagen -->
+        <figure>
+            <img src="images/foto_perfil_ivan.png" width="300" alt="Foto de Iván sonriendo">
+        </figure>        
+        <h1>Jorge Iván Zapata Valencia</h1>
+        <p>Desarrollador Hardware y Software</p>
+        <p>Mi trabajo en los últimos años se ha enfocado principalmente en despliegue de Redes LPWAN, Protocolos de
+            Transmisión para IoT (Internet of Things), Desarrollo de Firmware para Sistemas Embebidos y
+            Telecomunicaciones Móviles. En la actualidad trabajo en el despliegue y mantenimiento de redes sensóricas
+            para el monitoreo de variables ambientales, tales como caudal, precipitación, temperatura, humedad relativa
+            y calidad de aire; transmisión de datos y desarrollo de plataformas para su visualización; también en
+            proyectos de monitoreo de calidad de agua para el Ministerio de Ambiente de Uruguay, realizando la interfaz
+            de conexión entre las boyas en los embalses y el servidor de UTEC y DINACEA. Asimismo, participo activamente
+            en el desarrollo de programas académicos para el área de programación y agricultura de precisión. A su vez,
+            brindo asesorías en el tema de emprendedurismo sobre validación de ideas de negocio, casos de éxito y
+            fracaso en emprendimientos de base tecnológica, desarrollo de habilidades blandas, creatividad e innovación.
+        </p>
+        <a href="CV_JIZV_COMPLETO.pdf" target="_blank">Descarga mi CV</a>
+        <!-- Ahora creo una sección para introducir las habilidades -->
+        <section> 
+            <h2>Mis Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>C/C++</li>
+                <li>Rust</li>
+                <li>HTML</li>
+                <li>Arduino</li>
+                <li>Micropython</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Otras Tecnologías</h2>
+            <ul>
+                <li>FastAPI</li>
+                <li>Matlab</li>
+                <li>Javascript</li>
+                <li>LabVIEW</li>
+                <li>Selenium</li>
+                <li>Despliegue de servidores</li>
+            </ul>
+        </section>
+
+        <!-- ahora una nueva sección para incluir los proyectos en los que he participado -->
+        <section>
+            <h2>Portafolio de Proyectos</h2>
+            <article>
+                <h3> Red LoRaWAN para la ciudad de Manizales </h3>
+                <p>
+                    <a href="https://www.aguasdemanizales.com.co/">Aguas de Manizales</a>
+                </p>
+                <img src="otra.png" width="200" alt="Captura de pantalla de la red desplegada">
+            </article>
+            <article>
+                <h3>Poryecto de Calidad de Agua del Río Negro</h3>
+                <p><a href="https://www.gub.uy/ministerio-ambiente/">Ministerio de Ambiente Uruguay</a></p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZQ8xSdZByGg" title="Video de presentación del proyecto de RN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <video src="https://www.youtube.com/watch?v=ZQ8xSdZByGg" alt="Video de presentación del proyecto de RN" controls></video> -->
+                <!-- <img src="otra2.png" width="200" alt="Foto de las boyas desplegabas en los embalses"> -->
+            </article>
+        </section>
+
+        <!-- Ahora otro section para incluir el costo de las horas como freelance -->
+        <section>
+            <h2>Contrátame</h2>
+            <table border="1">
+                <thead>
+                    <th>Tipo de trabajo</th>
+                    <th>Precios</th>
+                </thead>
+                <tr>
+                    <td> Hora </td>
+                    <td> $20 USD </td>
+                </tr>
+                <tr>
+                    <td> Proyecto </td>
+                    <td> $1000 USD </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Por último una sección de contacto conmigo -->
+        <section>
+            <form action="https://mi_pagina_privada.com">
+                <div>
+                    <label for="control-nombre">Nombre: </label>
+                    <input type="text" id="control-nombre"> <!-- Elementos vacíos -->
+                </div>
+
+                <div>
+                    <label for="control-email">Correo electrónico</label>
+                    <input type="email" id="control-email">
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Iván Zapata &copy; 2023</p>
+        <!-- <a href="https://twitter.com/ivancho_523" target="blank">Twitter</a> -->
+        <a href="https://twitter.com/ivancho_523" target="blank"> <img src="images/twitter.png" alt="logo de twitter con enlace a perfil"></a>
+    </footer>
+</body>
+
+</html>
